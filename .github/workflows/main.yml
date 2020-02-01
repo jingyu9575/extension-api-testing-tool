@@ -1,0 +1,18 @@
+name: CI
+on:
+  release:
+    types:
+      - created
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Zip Folder
+      run: zip -r dist.unsigned.xpi * -x README.md LICENSE .git .github
+    - name: Upload to Release
+      uses: JasonEtco/upload-to-release@v0.1.1
+      with:
+        args: dist.unsigned.xpi application/x-xpinstall
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
