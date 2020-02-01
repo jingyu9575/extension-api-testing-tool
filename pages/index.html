@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title data-i18n='extensionName'></title>
+	<link rel="icon" href="/icons/icon.svg">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div id='apis'></div>
+	<div id='content'>
+		<div class='column'>
+			<div class="column-title" data-i18n="members"></div>
+			<div class="column-content" id="members"></div>
+		</div>
+		<div class='column'>
+			<div class="column-title" data-i18n="events"></div>
+			<div class="column-content" id="events"></div>
+		</div>
+	</div>
+	<input id='command'></input>
+
+	<template id='api-template'>
+		<button type="button" class="api"></button>
+	</template>
+	<template id='member-template'>
+		<button class="member"></button>
+	</template>
+	<template id='event-template'>
+		<label class="event">
+			<input type="checkbox">
+			<span></span>
+		</label>
+	</template>
+	<script type='module' src='index.js'></script>
+</body>
+
+</html>

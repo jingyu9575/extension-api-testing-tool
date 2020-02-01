@@ -1,0 +1,14 @@
+{
+	"extensionName": {
+		"message": "Extension Api Testing Tool"
+	},
+	"extensionDescription": {
+		"message": "An extension api testing tool."
+	},
+	"members": {
+		"message": "Members"
+	},
+	"events": {
+		"message": "Events"
+	}
+}

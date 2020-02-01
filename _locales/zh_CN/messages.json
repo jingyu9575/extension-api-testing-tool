@@ -1,0 +1,14 @@
+{
+	"extensionName": {
+		"message": "扩展 API 测试工具"
+	},
+	"extensionDescription": {
+		"message": "一个扩展 API 测试工具。"
+	},
+	"members": {
+		"message": "成员"
+	},
+	"events": {
+		"message": "事件"
+	}
+}
